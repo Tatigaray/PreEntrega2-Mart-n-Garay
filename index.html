@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +19,8 @@
 
 <header>
    
-<div>
-   <img class="logoheader" src="../Proyecto Final/img/logoblanco.jpg" alt="logo" id="logo">
+<div class="logo-header">
+   <img class="logoheader" src="../Proyecto Final/img/logos/logoblanco.jpg">
 </div>
 
  </header>
@@ -48,27 +49,107 @@
 
       </nav>
    
-      <div class="bannerinicio">
-      </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="../Proyecto Final/img/slider/sl1.jpg" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h2 class="h2slider1">Arquitectura y Diseño</h2>
+               <p class="pslider1">Trabajamos cada proyecto de forma integral, siempre buscando la excelencia.</p>
+             </div>
+           </div>
+      
+           <div class="carousel-item">
+            <img src="../Proyecto Final/img/slider/sl2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="h2slider2">Transformamos tu realidad</h2>
+              <p class="pslider2">Nos dedicamos a mejorar la calidad de vida de nuestros clientes mediante la arquitectura</p>
+            </div>
+          </div>
+           <div class="carousel-item">
+             <img src="../Proyecto Final/img/slider/sl5.jpg" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h2 class="h2slider3">Proyecto y Dirección de Obra</h2>
+               <p class="pslider3">Realizamos tu obra de punta a punta, asesorandote en cada toma de decisiones</p>
+             </div>
+           </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
 
       <main>
-         <section class="grid_section">
-             <img src="../Proyecto Final/img/main/m2.jpg" alt="" class="img_section">
-             <h2 class="titulo_section">Nuestro Estudio</h2>
-             <p class="parrafo_section">Somos un equipo interdisciplinario de diseño, comprometidos en la creación de arquitectura innovadora adaptada a cada usuario y su espacio.
+         <section class="grid_section1">
+            
+            <img src="../Proyecto Final/img/main/fotomain.jpg" alt="" class="img_section1">
+            <h2 class="titulo_section1">Nuestro Estudio</h2>
+            <p class="parrafo_section1">Somos un equipo interdisciplinario de diseño, comprometidos en la creación de arquitectura innovadora adaptada a cada usuario y su espacio.
 
                Ofrecemos un servicio integral, brindamos servicios de proyecto arquitectónico, paisajismo, estudio de suelos, estructuralista, diseño de interiores, etc. El equipo acompaña al cliente desde las ideas iniciales, hasta la materialización del espacio.
                
                Nos centramos en la búsqueda de un producto con el cual cada cliente se sienta identificado. Aportamos soluciones innovadoras, explorando cada material y sus capacidades, creando así, una variedad de alternativas diferentes a situaciones cotidianas.
                
                Nuestro servicio comprende la generación de la idea principal, representación gráfica en planos ejecutivos, aprobaciones municipales y en barrios y ejecución completa de la obra.</p>
-             
          </section>
 
-         <section class="grid_section">
-             <h2 class="titulo_section">Section 2</h2>
-         
-         </section>
+
+         <div class="container-card">
+ 
+            <div class="card">
+                 <figure>
+                    <img src="../Proyecto Final/img/main/living/living2.jpg">
+                </figure>
+                <div class="contenido-card">
+                    <h3>Proyectos</h3>
+                    <p>Te acompañamos en todo tu proyecto, desde el diseño hasta su ejecución, brindando el mejor servicio profesional.</p>
+                    <a href="../Proyecto Final/html/proyectos.html">Ver Más</a>
+                    </div>
+                </div>
+
+            <div class="card">
+                <figure>
+                    <img src="../Proyecto Final/img/main/arquitectura/plano4.jpg">
+                </figure>
+                <div class="contenido-card">
+                    <h3>Arquitectura</h3>
+                    <p>Elaboramos distintos presupuestos para tu obra, sin cargo, y por m2 de obra llave en mano.</p>
+                    <a href="../Proyecto Final/html/arquitectura.html">Ver Más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <img src="../Proyecto Final/img/main/mobiliario/mobiliario1.jpg">
+                </figure>
+                <div class="contenido-card">
+                    <h3>Mobiliario</h3>
+                    <p>Diseñamos y fabricamos tu mobiliario a medida. Nos ocupamos de seleccionar equipamiento, textiles y deco.</p>
+                    <a href="../Proyecto Final/html/mobiliario.html">Ver Más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <img src="../Proyecto Final/img/main/contacto/contacto1.jpg">
+                </figure>
+                <div class="contenido-card">
+                    <h3>Contacto</h3>
+                    <p>Nos encantaria conocer tus proyectos y poder ayudarte a llevarlos a cabo acompañandote en todo el proceso.</p>
+                    <a href="../Proyecto Final/html/contacto.html">Ver Más</a>
+                </div>
+            </div>
+            </div>  
 
 
 
@@ -78,7 +159,7 @@
 <footer>
 
  <section class="gridfooter">
-      <img src="../Proyecto Final/img/logoblanco.jpg" alt="" class="logofooter">
+      <img src="../Proyecto Final/img/logos/logoblanco.jpg" alt="" class="logofooter">
       
       <div class="redsocial">
          <a href="#" class="fa fa-facebook"></a>
@@ -89,13 +170,15 @@
 
       <p class="dire"> Benjamin Franklin 355, Vicente Lopez, Buenos Aires.
                        +549 1130487625 
-                       arqfiggini@gmail.com</p>
+                       ifiggini@gmail.com</p>
 
       <p class="pcopy"> Copyright (C) 2022 <b>Iván Figgini</b> Todos los Derechos Reservados</p>
 
  </section>
 
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 </body>
 </html>
