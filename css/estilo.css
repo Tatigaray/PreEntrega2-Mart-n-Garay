@@ -51,7 +51,6 @@ li{
     background-color: #2a85be;
     color:  white;
     font-family: 'Roboto', sans-serif;
-    margin-top: 15px
     text-decoration: none;
 }
 
@@ -67,7 +66,7 @@ li{
     background-color: #2a85be;
     color: white;
     font-family: 'Roboto', sans-serif;
-    margin-top: 15px
+    margin-top: 15px;
     text-decoration: none;
 }
 
@@ -83,7 +82,6 @@ li{
     color: white;
 
     font-family: 'Roboto', sans-serif;
-    margin-top: 15px
     text-decoration: none;
 }
 
@@ -403,8 +401,9 @@ object-position: covers;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(51, 134, 186);
     text-decoration: none;
-    text-align: justify
+    text-align: justify;
     grid-area: a3;
+
 }
 
 
@@ -468,7 +467,7 @@ object-position: covers;
     }
 
     .img_section1{
-        grid grid-area: imgen;
+        grid grid-area: img;
         
     }
 
@@ -595,6 +594,4 @@ footer{
     height: 130px;
     object-position: covers;
     }
-
-
 }
